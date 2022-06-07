@@ -1,0 +1,423 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.fav{
+    width: 20px;
+}
+/**********************************main section starts here*********************************************/
+
+.main {
+    margin-left: 0px;
+}
+
+.container {
+    margin-left: 0;  
+}
+
+#textarea { 
+    position: absolute;
+    padding-bottom: 120px !important;
+    resize: none;
+}
+
+#textarea, #textarea:focus, #textarea:active, #textarea:hover {
+    box-shadow: none;
+    border: none;
+}
+
+
+/**************************************************bottom bar *******************************************/
+
+.new{
+	background-color:#0C9;
+}
+
+     .tool-new{
+    background-color:#0C9;
+    border-color: #0C9;
+}
+
+.new:hover{
+    color:#FFF;
+} 
+
+.delete {
+	background-color:#ef233c;
+}
+
+.tool-delete{
+    background-color:#ef233c;
+    border-color: #ef233c;
+}
+
+.delete:hover{
+    color: #fff;
+}
+
+.open {
+	background-color:#fb8500;
+}
+
+.tool-open {
+    background-color:#fb8500;
+    border-color: #fb8500;
+}
+
+.open:hover{
+    color: #fff;
+}
+
+.clips-btn {
+    background-color:#9d4edd;
+    color: #fff;
+}
+
+.tool-save {
+    background-color:#9d4edd;
+    border-color: #9d4edd; 
+}
+
+.save:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.clips-btn:focus{
+    outline: 0;
+}
+
+.clips-btn:focus .tool-tiptext {
+    visibility: hidden;
+}
+
+
+.bottom-bar{
+    border-radius: 40px;
+    background-color: #e9ecef;
+    position:fixed;
+    bottom: 40px;
+    height: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s, transform 0.3s;
+    width: 500px;
+}
+
+.bottom-bar:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    transform: translate(-50%, -5px);
+}
+
+.bottom-btn {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 50px !important;
+    color:#FFF;
+    text-align:center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.bottom-btn:hover {
+    transform: scale(1.1);
+}
+
+.dropup {
+    display: inline;
+}
+
+.recent-clip {
+    transition: font-size 0.2s;
+}
+
+.recent-clip:hover {
+    font-size: 1.1em;
+}
+
+@media only screen and (max-width: 992px){
+    .bottom-bar{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .bottom-bar{
+        width: 300px;
+        transform: translateX(-50%) scale(0.8);
+    }
+}
+
+
+/***************************************** top bar css starts here*********************************/
+
+.clip-name {
+    border: none;
+    border-bottom: 2px solid rgb(206, 233, 240);
+    border-radius: 0;
+    padding: 3px 8px;
+    background-color: inherit;
+    transition: padding-bottom 0.3s, margin-bottom 0.3s, border-bottom 0.3s;
+}
+
+.clip-name:focus, .clip-name:active, .clip-name:hover {
+    padding-bottom: 1px;
+    /* margin-bottom: 2px; */
+    border-bottom: 4px solid rgb(206, 233, 240);
+    outline: none;
+}
+
+.user{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(236, 236, 236);
+}
+
+.sync {
+    color: #4BB543;
+}
+
+.sync:hover{
+    text-decoration: none;
+    color: #4BB543;
+    cursor: pointer;
+    
+}
+
+.sync-icon {
+    transition: transform 0.2s;
+}
+
+.sync-icon:hover {
+    transform: rotate(120deg);
+}
+
+.bd-highlight{
+     background-color: #edf6f9;
+}
+
+input{
+    border-color: #e5e5e5;
+    max-width: 150px;
+    float: left;
+}
+
+@media only screen and (max-width: 600px) {
+    input{
+        max-width: 150px;
+    }
+}
+
+
+/******************************************user modal******************************/
+
+
+.logout {
+    font-size: 20px;
+    color: #fff;
+    background-color: #0f4c5c;
+    border-radius: 20px;
+    padding: 5px 16px;
+    letter-spacing: 2px;
+}
+
+.logout:hover{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.user{
+    cursor: pointer;
+}
+
+.user-name{
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 15px;
+}
+
+.email-id {
+    margin-bottom: 30px;
+}
+
+#profile-img-lg {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 16px auto;
+    background-color: rgb(236, 236, 236);
+}
+
+/******************************* overlay screen|landing page *****************************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0px !important;
+    padding: 0px !important;
+    position: static;
+}
+
+.landing-page{
+    height: 100vh !important;
+    width: 100vw !important;
+    background-color: #edf6f9;
+}
+
+.google-btn {
+  width: 184px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+  margin-top: 5%;
+}
+
+  .google-btn .google-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+
+  .google-btn .google-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .google-btn .btn-text {
+    float: right;
+    margin: 11px 11px 0 0;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto";
+  }
+
+  .google-btn:hover {
+    box-shadow: 0 0 6px #4285f4;
+    cursor: pointer;
+  }
+
+  .google-btn:active {
+    background: #1669F2;
+  }
+
+
+.overlay-heading{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    font-weight: 600;
+}
+
+.overlay-text{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #6E6D7A;
+    font-weight: 400; 
+}
+
+.subheading{
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    color: #6E6D7A;
+    font-weight: 600;
+}
+
+/*------------------------------------Loading--------------------------*/
+.loading-bar {
+    height: 5px;
+    overflow: hidden;
+    background-color: rgb(206, 233, 240);
+}
+
+@keyframes loading-bar-animation {
+    from {
+        left: 0%;
+        transform: translateX(-100%);
+    }
+    to {
+        left: 100%;
+        transform: translateX(0);
+    }
+}
+
+#loader {
+    height: 100%;
+    width: 20%;
+    position: relative;
+    background-color: rgb(88, 189, 219);
+    
+    animation-name: loading-bar-animation;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 5%;
+}
+
+.landing-page{
+    padding-top: 12%;
+}
+
+.image-small{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+
+/*----------------------------------tool-tip--------------------------------*/
+
+.tool-tip .tool-tiptext {
+    visibility: hidden;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    
+  }
+  
+  .tool-tip .tool-tiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+  }
+  
+  .tool-tip:hover .tool-tiptext {
+    visibility: visible;
+  }
+
+  #file-selector {
+      display: none;
+  }
