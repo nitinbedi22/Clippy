@@ -17,4 +17,4 @@
 > https://clippy-clipboard.herokuapp.com/
 
 -------------
-Made with :heart:  by [Anshit](https://github.com/Anshit01) and [Shwetal](https://github.com/shwetalsoni)
+Made by : Nitin Bedi
